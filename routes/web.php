@@ -38,6 +38,12 @@ Route::resources([
     'questions' => 'QuestionController',
 ]);
 
+Route::post('/createPost', [
+    'use' => 'PostController@postCreatePost',
+    'as' => 'create.post'
+    ]);
+
+
 
 
 
